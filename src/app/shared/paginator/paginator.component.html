@@ -1,0 +1,9 @@
+<nav>
+    <ul class="pagination">
+        <li class="page-item" *ngFor="let page of pageOptions"
+            [ngClass]="page === currentPage ? 'active' : '' "
+        >
+          <a class="page-link">{{page}}</a>
+        </li>
+    </ul>
+</nav>
